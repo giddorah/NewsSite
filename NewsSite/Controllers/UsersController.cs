@@ -147,6 +147,10 @@ namespace NewsSite.Controllers
         public async Task<IActionResult> RecoverUsers()
         {
 
+            //await roleManager.CreateAsync(new IdentityRole("Admin"));
+            //await roleManager.CreateAsync(new IdentityRole("Publisher"));
+            //await roleManager.CreateAsync(new IdentityRole("Subscriber"));
+
             context.RemoveRange(userManager.Users.ToList());
             context.SaveChanges();
 
