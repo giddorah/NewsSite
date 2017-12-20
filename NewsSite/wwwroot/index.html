@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Hantera Användare</h1>
+    <button id="recreateAllUsers">Återskapa alla</button><br />
+    <button id="showAllUsersWithClaims">Visa alla med claims</button><br />
+
+    <h1>Logga in</h1>
+    <select id="selectUser">
+    </select><br />
+    <button id="loginUser">Logga in</button><br />
+    <span id="loggedIn"></span>
+    <a href="/api/users/hiddennews">Link</a>
+    <button id="hiddenNews">Test</button>
+
+    <h1>Kontrollera Rättigheter</h1>
+    <button id="checkCanSeeOpen">Kan se öppen</button><br />
+    <button id="checkCanSeeHidden">Kan se dold</button><br />
+    <button id="checkCanSeeHiddenTwentyYears">Kan se dold 20 år</button><br />
+    <button id="checkCanPublishSports">Kan publicera sport</button><br />
+    <button id="checkCanPublishCulture">Kan publicera kultur</button>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/Main.js"></script>
+</body>
+</html>
